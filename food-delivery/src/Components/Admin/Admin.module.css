@@ -1,0 +1,38 @@
+.container{
+
+    background-color: white;
+    color: black;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    right: 80px;
+    
+    }
+    .table{
+        border-spacing: 20px;
+        text-align: left;
+        width: 100%;
+    
+    }
+    .item{
+
+    }
+    .title{
+        text-align: center;
+    
+    }
+    .trTitle{
+    background-color: antiquewhite;
+    }
+    .button{
+    border: none;
+    color:white;
+    padding :5px;
+    }
+    .button:first-child{
+        background-color: teal;
+        margin-right: 10px;
+    }
+    .button:last-child{
+        background-color: crimson;
+    }

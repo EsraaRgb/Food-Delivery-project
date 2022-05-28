@@ -1,0 +1,22 @@
+body {
+  --maincolor:#E32207;
+  background-image: url("images/fast-food-restaurants.png");
+  background-size:cover;
+  /* background-color: #131722; */
+  font-family:  'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color: #fff;
+ 
+}
+.navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link  {
+  color: #fff !important;
+} 
+.auth-links .nav-link{
+  color: #fff !important;
+}
+.secondcolor{
+    color: #949cb0;
+}
+
+

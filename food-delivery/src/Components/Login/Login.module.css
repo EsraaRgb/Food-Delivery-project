@@ -1,0 +1,19 @@
+.loginButton{
+    background-color: var(--maincolor);
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    border: 2px solid white;
+}
+.ForgetPassword{
+    color: var(--maincolor);
+    margin-top: 30px;
+}
+.form{
+    border-radius: 20px;
+    
+}
