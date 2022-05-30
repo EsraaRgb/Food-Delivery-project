@@ -1,10 +1,16 @@
-import axios from 'axios'
-import Joi from 'joi'
-import React, { useState } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
-import ForgetPassword from '../ForgetPassword/ForgetPassword'
-import style from './Login.module.css'
+import axios from 'axios';
+import Joi from 'joi';
+import React, { useState } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import ForgetPassword from '../ForgetPassword/ForgetPassword';
+import style from './Login.module.css';
+import  ReCAPTCHA  from 'react-google-recaptcha';
+// import ReactDOM from 'react-dom/client';
 
+// const root=ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+
+// )
 export default function Login({setUserData}) {
 let [user, setUser] = useState({
     email: '',
@@ -63,8 +69,15 @@ function getFormValue(e) {
     setUser(myUser);// update user data
     console.log(myUser)
 }
+function cons(){
+    console.log("rec");
+}
+
 return (
     <>
+        <div className={`${style.size} `}>
+
+        {/* <div> */}
         <div className='d-flex justify-content-center align-items-center my-5  '>
         <div className={`w-50  p-5  bg-light overflow-auto ${style.form}`}>
             <h1 className='my-4 text-center text-dark'>Login </h1>
@@ -83,6 +96,13 @@ return (
                     {loading ? <i className='fa fa-spinner fa-spin'></i> : 'Login'}
                     </button>
                 </div>
+                <div className='d-flex justify-content-center my-3'>
+                <ReCAPTCHA
+                sitekey="6Ld8lCMgAAAAAEAPDZBKpe6R_hd_9JiUil6ETM2F"
+                // theme='dark'
+                onLoad={cons}
+                />
+                </div>
                 <div className="clearfix"></div>
                 <Link onClick={goToForgetPassWord} className={`text-decoration-none d-flex justify-content-center  ${style.ForgetPassword}`} to='forgetPassword'>Forgot password?</Link>
                 <div className='clearfix'></div>
@@ -91,7 +111,8 @@ return (
 
         </div>
         <div className='clearfix'></div>
-            
+        </div>
+        
     </>
 
 )}

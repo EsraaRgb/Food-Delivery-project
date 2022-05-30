@@ -1,20 +1,21 @@
 
-import styles from"../Admin.module.css"
+import styles from "../tables.css";
 export default function MAnageUsers() {
   
     return (
         <div className={styles.container}>
         <div className={styles.item}>
-          <h1 className={styles.title}>Users List</h1>
-          <table className={styles.table}>
+          <table className={`${styles.table} table table-head text-center`}>
             <tbody>
               <tr className={styles.trTitle}>
               <th>Name</th>
                 <th>Id</th>
-                <th>user type</th>
+                <th>type</th>
                 <th>Address</th>
                 <th>phone</th>
                 <th>Email</th>
+                <th>Action</th>
+
               </tr>
             </tbody>
             <tbody >
@@ -27,12 +28,11 @@ export default function MAnageUsers() {
                   <td>user@mail</td>
                   <td>
                     {/* Handle order state */}
-                    <button className={styles.button} >
-                      suspend user
+                    <button >
+                      suspend
                     </button>
-                    <button className={styles.button}>
-                      remove user
-                    </button>
+                    <button className={` mx-2`}>
+X                    </button>
                   </td>
                 </tr>
               </tbody>

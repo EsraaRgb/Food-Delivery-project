@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react';
 import jwtDecode from 'jwt-decode';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import ForgetPassword from '../ForgetPassword/ForgetPassword';
-import DishesList from '../Admin/Dishes/DishesList';
+import User from '../User/User';
 
 function App() {
   let [loginData, setLoginData] = useState(null);/// Step 2
@@ -36,27 +36,29 @@ function App() {
   },)
   return (
     <>
-    <Navbar loginData={loginData} logOut={logOut} />
-    <div className="container">
-      <Routes>
-        {/* <Route element={<ProtectedRoute loginData={loginData} />}>
-
-          <Route path='/' element={<Home />}></Route>
-          <Route path='home' element={<Home />}></Route>
+      <Navbar loginData={loginData} logOut={logOut} />
+      <div className="container">
+        <Routes>
           
-
-        </Route> */}
-        <Route path='about' element={<About />}></Route>
-        <Route path='login' element={<Login setUserData={setUserData} />}></Route>
-        <Route path='register' element={<Register />}></Route>
-        {/* <Route path='*' element={<Notfound />}></Route> */}
-        <Route path='admin' element={<Admin />}></Route>
-        {/* <Route path='dishes' element={<DishesList />}></Route> */}
-      </Routes>
-
-    </div>
-    <Footer/>
-  </>
+          <Route element={<ProtectedRoute loginData={loginData} />}>
+          
+            
+          </Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='home' element={<Home />}></Route>  
+          <Route path='admin' element={<Admin />}></Route>
+          <Route path='about' element={<About />}></Route>
+          <Route path='login' element={<Login setUserData={setUserData} />}></Route>
+          <Route path='register' element={<Register />}></Route>
+          <Route path='forgetPassword' element={<ForgetPassword />}></Route>
+          <Route path='footer' element={<Footer/>}></Route>
+          <Route path='notfound' element={<Notfound/>}></Route>
+          <Route path='user' element={<User/>}></Route>
+        </Routes>
+        
+      </div>
+      <Footer/>
+    </>
 
   );
 }

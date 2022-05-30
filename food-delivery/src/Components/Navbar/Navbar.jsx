@@ -5,10 +5,11 @@ import style from '../Navbar/Navbar.module.css'
 export default function Navbar({ loginData,logOut }) {
     console.log(loginData);
     return (
-        <nav className={`navbar navbar-expand-lg navbar-dark `}>
+        <nav className={`navbar navbar-expand-lg navbar-dark  py-3 position-fixed start-0 end-0 top-0 ${style.zindex} `}>
             <div className="container">
                 <img src="../../images/elmenusLogo.svg" alt="" />
-                <a className="navbar-brand fw-bold " href="#">elmenus</a>
+                {/* <Link element={<Home/>} to={'home'} /> */}
+                <a className="navbar-brand fw-bold " href="#">FOOD ZONE</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -56,7 +57,7 @@ export default function Navbar({ loginData,logOut }) {
                         </> : <li className="nav-item">
                             {/* else: user is logged in  this appear logout */}
 
-                            <a className={`nav-link   `} onClick={logOut}>Logout</a>
+                            <a className={`nav-link` } onClick={logOut}>Logout</a>
                         </li>}
                     </ul>
 

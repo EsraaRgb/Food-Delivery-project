@@ -1,10 +1,9 @@
-import styles from "../Admin.module.css";
+import styles from "../tables.css";
 export default function OrdersList() {
   return (
-    <div className={styles.container}>
+    <div className={styles.admin}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Orders</h1>
-        <table className={styles.table}>
+        <table className={`${styles.table} table table-head text-center`}>
           <tbody>
             <tr className={styles.trTitle}>
               <th>Id</th>
@@ -23,7 +22,7 @@ export default function OrdersList() {
                 <td>preparing</td>
                 <td>
                   {/* Handle order state */}
-                  <button className={styles.button} >
+                  <button >
                     Next Stage
                   </button>
                 </td>

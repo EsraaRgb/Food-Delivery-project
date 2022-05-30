@@ -1,5 +1,8 @@
 body {
-  --maincolor:#E32207;
+  --maincolor:#0B1320;
+  --footercolour:#394d5f;
+  --navbarcolour:#394d5f;
+  --bcground:#fef9e6;
   background-image: url("images/fast-food-restaurants.png");
   background-size:cover;
   /* background-color: #131722; */
@@ -7,7 +10,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     color: #fff;
- 
+    /* E32207 */
 }
 .navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link  {
   color: #fff !important;

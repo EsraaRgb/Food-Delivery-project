@@ -1,0 +1,34 @@
+.admin{
+
+    background-color: var(--maincolor); 
+    color: var(--maincolor);
+    height: 30rem;
+    position: absolute;
+    
+}
+
+.title{
+    text-align: center;
+/* color: var(--maincolor); */
+color: black;
+}
+.trTitle{
+    color: var(--maincolor);
+}
+button{
+border: none;
+color:white;
+padding :5px;
+
+}
+button:first-child{
+    background-color: var(--maincolor);
+    margin-right: 1rem;
+    border-radius: .5rem;
+
+}
+button:last-child{
+    background-color: var(--navbarcolour);
+    border-radius: .5rem;
+
+}

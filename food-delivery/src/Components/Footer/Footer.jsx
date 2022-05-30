@@ -1,10 +1,11 @@
 import React from 'react'
+import style from "./Footer.module.css"
 
 export default function Footer() {
   return (
     
     <>
-    <div className={`bg-info position-fixed start-0 bottom-0 end-0  text-center`} >
+    <div className={`${style.footer} w-100 position-static start-0 bottom-0 end-0  text-center`} >
         <div className='w-75 m-auto py-2'>
             <div className={`row justify-content-around `}>
                 <h5 className='col-md-2'>HOME</h5>

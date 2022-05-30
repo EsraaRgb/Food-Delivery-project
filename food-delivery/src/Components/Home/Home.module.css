@@ -1,0 +1,48 @@
+
+.all{
+    height: 100vh;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px) ;
+    --webkit-backdrop-filter: blur(12px);
+    text-align: center;
+    /* margin:100px 0px 100px 0px;
+    padding:100px 0px 100px 0px ; */
+}
+.welcome{
+    font-size: 30px;
+}
+.NAME{
+    color:var(--maincolor);
+    font-size: 60px;
+}
+.animationdiv{
+    font-size: 30px;
+}
+h6::after {
+    content:"|";
+    animation-name:typing ;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+}
+@keyframes typing{
+    0%   {content: "F|";}
+    5%   {content:  "FO|";}
+    10%   {content:  "FOO|";}
+    15%   {content: "FOOD|";}
+    20%   {content: "FOO|";}
+    25%   {content:  "FO|";}
+    30%  {content: "F|";}
+    35%  {content: "|";}
+    40%  {content:  "F|";}
+    45%  {content: "FA|";}
+    50%  {content: "FAM|";}
+    55%  {content: "FAMI|";}
+    60%  {content: "FAMIL|";}
+    65%  {content:  "FAMILY|";}
+    70%  {content: "FAMIL|";}
+    75%  {content: "FAMI|";}
+    80%  {content:  "FAM|";}
+    85%  {content:  "FA|";}
+    90%  {content: "F|";}
+}

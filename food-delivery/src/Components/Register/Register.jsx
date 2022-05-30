@@ -63,7 +63,8 @@ function goToLogin(){
     }
     return (
         <>
-            <div className={`w-50 text-dark m-auto p-5 rounded-3 bg-light overflow-auto  $ {style.form}`}>
+            <div className={`${style.size} d-flex align-items-center overflow-auto`}>
+            <div className='w-50 text-dark m-auto p-5 rounded-3 bg-light overflow-auto'>
                 <h1 className='my-4 text-center'>Registeration</h1>
                 {errorMsg ? <div className="alert alert-danger p-2">{errorMsg}</div> : ''}
                 {errorList.map((error, index) => <div className="alert alert-danger p-2">{error.message}</div>)}
@@ -103,6 +104,7 @@ function goToLogin(){
                     </div>
                     <div className='clearfix'></div>
                 </form>
+            </div>
             </div>
         </>
     )

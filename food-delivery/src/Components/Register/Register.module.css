@@ -9,6 +9,8 @@
     line-height: 20px;
     border: 2px solid white;
 }
-.form{
-height: 100 %;
+.size{
+    height: 100vh;
+    margin-bottom: 100px;
+    margin-top: 45px;
 }
