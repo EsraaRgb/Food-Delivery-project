@@ -4,9 +4,12 @@
     color: var(--maincolor);
     height: 30rem;
     position: absolute;
+    background-color: aliceblue;
     
 }
-
+table{
+    border-radius: .6rem;
+}
 .title{
     text-align: center;
 /* color: var(--maincolor); */

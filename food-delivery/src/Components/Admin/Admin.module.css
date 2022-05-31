@@ -1,7 +1,7 @@
 
 .container{
     display: flex;
-    height: 150vh;
+    height: 200vh;
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -11,6 +11,7 @@
     left: 0%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color: var(--maincolor)
 }
 .sidebar{
     background: white;
@@ -22,7 +23,6 @@
 
 }
 .main{
-background: white;
 border-radius: 0.6rem;
 margin-bottom: 2rem;
 

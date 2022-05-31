@@ -4,7 +4,7 @@ export default function DishesList() {
     <>
       <div  className={`${styles.admin} `}>
         <div >
-          <table className={`${styles.table} table table-head text-center`}>
+          <table className={`${styles.table} table table-head text-center  bg-white`}>
             <tbody>
               <tr className={`${styles.trTitle}`}>
                 <th>Id</th>

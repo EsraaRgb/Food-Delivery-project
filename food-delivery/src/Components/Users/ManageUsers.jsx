@@ -5,7 +5,7 @@ export default function MAnageUsers() {
     return (
         <div className={styles.container}>
         <div className={styles.item}>
-          <table className={`${styles.table} table table-head text-center`}>
+          <table className={`${styles.table} table table-head text-center  bg-white`}>
             <tbody>
               <tr className={styles.trTitle}>
               <th>Name</th>

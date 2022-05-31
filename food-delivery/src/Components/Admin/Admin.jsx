@@ -1,12 +1,11 @@
 import style from "./Admin.module.css";
 import React, { useEffect, useState } from "react";
-import { MdSpaceDashboard } from "react-icons/md";
 import { GiMeal } from "react-icons/gi";
-import { AiFillAlert } from "react-icons/ai";
-import { GrUserAdd } from "react-icons/gr";
+import { AiFillAlert ,AiOutlinePieChart} from "react-icons/ai";
+import { GrUserAdd ,GrUserManager } from "react-icons/gr";
 import { FiLogOut } from "react-icons/fi";
-import { GrUserManager } from "react-icons/gr";
 import Register from '../Register/Register';
+import {BsTable} from 'react-icons/bs';
 import { BiDish } from 'react-icons/bi';
 import Dashboard from "./Dashboard";
 import { Link } from "react-router-dom";
@@ -30,7 +29,16 @@ export default function Admin() {
             >
               <a href="#">
 
-                <span className={`${style.item}`}><MdSpaceDashboard /> Dashboard</span>
+                <span className={`${style.item}`}><BsTable /> Tables</span>
+              </a>
+            </li>
+            <li
+              className={currentLink === 1 ? "active" : "none"}
+              onClick={() => setCurrentLink(1)}
+            >
+              <a href="#">
+
+                <span className={`${style.item}`}><AiOutlinePieChart /> Charts</span>
               </a>
             </li>
             <li

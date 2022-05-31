@@ -3,7 +3,7 @@ export default function OrdersList() {
   return (
     <div className={styles.admin}>
       <div className={styles.item}>
-        <table className={`${styles.table} table table-head text-center`}>
+        <table className={`${styles.table} table table-head text-center  bg-white`}>
           <tbody>
             <tr className={styles.trTitle}>
               <th>Id</th>
