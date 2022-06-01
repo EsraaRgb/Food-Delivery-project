@@ -7,7 +7,6 @@ import { FiLogOut } from "react-icons/fi";
 import Register from '../Register/Register';
 import {BsTable} from 'react-icons/bs';
 import { BiDish } from 'react-icons/bi';
-import Dashboard from "./Dashboard";
 import { Link } from "react-router-dom";
 import DishesList from '../Dishes/DishesList'
 import OrdersList from "../Orders/OrdersList";
@@ -29,7 +28,7 @@ export default function Admin() {
             >
               <a href="#">
 
-                <span className={`${style.item}`}><BsTable /> Tables</span>
+                <span className={`${style.item}`}><BsTable /> Profile</span>
               </a>
             </li>
             <li
@@ -38,18 +37,9 @@ export default function Admin() {
             >
               <a href="#">
 
-                <span className={`${style.item}`}><AiOutlinePieChart /> Charts</span>
+                <span className={`${style.item}`}><AiOutlinePieChart /> Ranking Report</span>
               </a>
-            </li>
-            <li
-              className={currentLink === 2 ? "active" : "none"}
-              onClick={() => setCurrentLink(2)}
-            >
-              <a href="#">
-
-                <span className={`${style.item}`}><GiMeal /> Dishes</span>
-              </a>
-            </li>
+              </li>
             <li
               className={currentLink === 3 ? "active" : "none"}
               onClick={() => setCurrentLink(3)}
@@ -59,7 +49,6 @@ export default function Admin() {
                 <span className={`${style.item}`}><AiFillAlert /> Orders</span>
               </a>
             </li>
-
             <li
               className={currentLink === 4 ? "active" : "none"}
               onClick={() => setCurrentLink(4)}
@@ -79,6 +68,24 @@ export default function Admin() {
               </a>
             </li>
             <li
+              className={currentLink === 5 ? "active" : "none"}
+              onClick={() => setCurrentLink(5)}
+            >
+              <a href="#">
+
+                <span className={`${style.item}`}><GrUserAdd /> Suspend User</span>{" "}
+              </a>
+            </li>
+            <li
+              className={currentLink === 5 ? "active" : "none"}
+              onClick={() => setCurrentLink(5)}
+            >
+              <a href="#">
+
+                <span className={`${style.item}`}><GrUserAdd /> Unsuspend User</span>{" "}
+              </a>
+            </li>
+            <li
               className={currentLink === 6 ? "active" : "none"}
               onClick={() => setCurrentLink(6)}
             >
@@ -87,6 +94,16 @@ export default function Admin() {
                   Add Dish</span>{" "}
               </a>
             </li>
+            <li
+              className={currentLink === 2 ? "active" : "none"}
+              onClick={() => setCurrentLink(2)}
+            >
+              <a href="#">
+
+                <span className={`${style.item}`}><GiMeal /> Dishes</span>
+              </a>
+            </li>
+            
             <li className="logout">
 
               <Link to="/">
@@ -99,7 +116,7 @@ export default function Admin() {
         </div>
         <div className={`${style.main} p-2 my-50 flex-grow-1 `}>
           <div className={`${style.main}`}>
-            {currentLink === 1 && < Dashboard />}
+            {/* {currentLink === 1 && } */}
             {currentLink === 2 && <DishesList />}
             {currentLink === 3 && <OrdersList />}
             {currentLink === 4 && <ManageUsers />}

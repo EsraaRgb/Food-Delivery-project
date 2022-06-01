@@ -14,8 +14,6 @@ export default function MAnageUsers() {
                 <th>Address</th>
                 <th>phone</th>
                 <th>Email</th>
-                <th>Action</th>
-
               </tr>
             </tbody>
             <tbody >
@@ -27,12 +25,7 @@ export default function MAnageUsers() {
                   <td>0121648501</td>
                   <td>user@mail</td>
                   <td>
-                    {/* Handle order state */}
-                    <button >
-                      suspend
-                    </button>
-                    <button className={` mx-2`}>
-X                    </button>
+                    
                   </td>
                 </tr>
               </tbody>

@@ -37,7 +37,6 @@ function App() {
   return (
     <>
       <Navbar loginData={loginData} logOut={logOut} />
-      <div className="container">
         <Routes>
           
           <Route element={<ProtectedRoute loginData={loginData} />}>
@@ -56,7 +55,6 @@ function App() {
           <Route path='user' element={<User/>}></Route>
         </Routes>
         
-      </div>
       <Footer/>
     </>
 

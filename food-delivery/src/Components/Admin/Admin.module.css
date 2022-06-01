@@ -1,7 +1,7 @@
 
 .container{
     display: flex;
-    height: 200vh;
+    /* height: 200vh; */
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -57,6 +57,7 @@ a:hover {
     text-decoration: none;
     background-color: var(--navbarcolour); 
     border-radius: 0.6rem;
+    color:var(--maincolor)
 }
 .list{
     list-style-type: none;
